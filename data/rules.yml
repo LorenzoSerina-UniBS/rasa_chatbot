@@ -1,0 +1,14 @@
+version: "3.1"
+
+rules:
+- rule: Rispondere al saluto
+  steps:
+    - intent: saluto
+    - action: utter_saluto
+
+- rule: Fornire il meteo per una città
+  steps:
+    - intent: chiedi_meteo
+    - slot_was_set:
+        - città: true
+    - action: action_meteo

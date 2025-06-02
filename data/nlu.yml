@@ -1,0 +1,16 @@
+version: "3.1"
+
+nlu:
+- intent: saluto
+  examples: |
+    - Ciao
+    - Ehi
+    - Salve
+
+- intent: chiedi_meteo
+  examples: |
+    - Che tempo fa a [Roma](città)?
+    - Vorrei sapere il meteo a [Milano](città)
+    - Meteo per [Napoli](città)
+    - Com'è il tempo oggi a [Roma](città)?
+    - Fa caldo a [Milano](città)?

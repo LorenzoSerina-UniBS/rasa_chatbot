@@ -1,0 +1,16 @@
+recipe: default.v1
+language: it
+
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- name: DIETClassifier
+- name: EntitySynonymMapper
+- name: ResponseSelector
+- name: FallbackClassifier
+
+policies:
+- name: RulePolicy
+assistant_id: 20250602-170620-bipartite-surf

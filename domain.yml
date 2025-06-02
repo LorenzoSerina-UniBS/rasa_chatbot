@@ -1,0 +1,22 @@
+version: "3.1"
+
+intents:
+  - saluto
+  - chiedi_meteo
+
+entities:
+  - città
+
+slots:
+  città:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: città
+
+responses:
+  utter_saluto:
+    - text: "Ciao! Dimmi una città e ti dirò il meteo."
+
+actions:
+  - action_meteo
